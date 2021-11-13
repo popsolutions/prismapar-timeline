@@ -481,3 +481,22 @@
     outline: rgb(255, 255, 255) none 0px;
 }
 /*#P_29:before*/
+
+.modal{font-family: 'Source Sans Pro', sans-serif;}
+.modal-dialog{max-width: 600px;}
+.modal-body {overflow: hidden;padding: 0;background-color: #4371a5; color: white;font-weight: 300;}
+.modal-body a{color: white; text-decoration: none;}
+.modal-body .foto img{height: 526px;}
+.modal-body .foto{text-align: left;}
+.modal-content{background-color: #4371a5; border: 0}
+.modal-body .col-5{padding-right: 0;}
+.modal-body .row.externo{margin-right: -15px}
+.modal-body .texto{padding: 25px 15px 0 50px; text-align: left;}
+.modal-body .texto .col{padding-left: 0;}
+/*.modal-body .texto .row{margin-left: 0}*/
+.modal-body .nombre{font-weight: 700; font-size: 22px;border-bottom: 1px white solid; padding-bottom: 8px; padding-left: 0;}
+.modal-body .cargo{padding: 10px 0}
+.modal-body .detalle{font-size: 12px; padding-top: 50px}
+.modal-body .redes {padding-left: 0;margin-top: 20px;font-size: 14px;font-weight: 300;}
+.modal-body .redes .col-8{padding-left: 0;}
+.modal-body .redes .col-4{padding-right: 0; text-align: right;}

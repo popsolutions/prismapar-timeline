@@ -1,5 +1,4 @@
 <html>
-
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
@@ -13,675 +12,91 @@
 	crossorigin="anonymous"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
+	<link rel="stylesheet" href="css\style">
 </head>
-
-<style type="text/css">
-
-	.linha-tempo {
-	    background-image: url(./img/bg_historico.jpg);
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    padding-top: 60px;
-	    padding-bottom: 60px;
-	    width: 210%;
-	}
-
-
-	.bandeira-2002 {
-		margin-top: 64px;
-	}
-
-	.bandeira-2012 {
-    	margin-top: 519px;
-	}
-
-	.bandeira-2015 {
-    	margin-top: 524px;
-	}
-
-	.bandeira-2018 {
-    	margin-top: 559px;
-	}
-
-	.bandeira-2019 {
-    	margin-top: 555px;
-	}
-
-	.bandeira-2020 {
-    	margin-top: 518px;
-	}
-
-
-	.line-title{
-		width: 80%;
-		height: 3px!important;
-		border-top: 1px solid #1e3365;
-		margin-left: 0;
-	}
-
-	.line-bandeira{
-		border-top: 1px solid #1e3365;
-		height: 3px!important;
-		width: 150%;
-	}
-
-
-	#div-diagonal-2002 {
-	    width: 10px;
-   		height: 255px;
-    	margin-top: 127%;
-    	margin-left: 47px;
-	  background: #1e3365;
-	  -webkit-transform: skew(1000deg); /* Chrome, Opera */
-	      -ms-transform: skew(1000deg); /* IE */
-	          transform: skew(1000deg); /* Padrão */
-	}
-
-	#div-diagonal-2012 {
-	    width: 0px;
-	    height: 0px;
-	    margin-top: 0%;
-	    margin-left: 0px;
-	  background: #1e3365;
-	  -webkit-transform: skew(1000deg); /* Chrome, Opera */
-	      -ms-transform: skew(1000deg); /* IE */
-	          transform: skew(1000deg); /* Padrão */
-	}
-
-	#div-diagonal-2015 {
-		width: 0px;
-	    height: 0px;
-	    margin-left: 0px;
-	    margin-top: 0%;
-	  background: #1e3365;
-	  -webkit-transform: skew(1000deg); /* Chrome, Opera */
-	      -ms-transform: skew(1000deg); /* IE */
-	          transform: skew(1000deg); /* Padrão */
-	}
-
-	#div-diagonal-2018 {
-	    width: 0px;
-	    height: 0px;
-	    margin-left: 0px;
-	    margin-top: 0%;
-	  background: #1e3365;
-	  -webkit-transform: skew(1000deg); /* Chrome, Opera */
-	      -ms-transform: skew(1000deg); /* IE */
-	          transform: skew(1000deg); /* Padrão */
-	}
-
-	#div-diagonal-2019 {
-		width: 0px;
-	    height: 0px;
-	    margin-left: 0px;
-	    margin-top: 0%;
-	  background: #1e3365;
-	  -webkit-transform: skew(1000deg); /* Chrome, Opera */
-	      -ms-transform: skew(1000deg); /* IE */
-	          transform: skew(1000deg); /* Padrão */
-	}
-
-	#div-diagonal-2020 {
-	    width: 0px;
-	    height: 0px;
-	    margin-left: 0px;
-	    margin-top: 0%;
-	  background: #1e3365;
-	  -webkit-transform: skew(1000deg); /* Chrome, Opera */
-	      -ms-transform: skew(1000deg); /* IE */
-	          transform: skew(1000deg); /* Padrão */
-	}
-
-	.datas{
-		display: flex;
-	}
-
-
-
-/*@media (min-width: 320px){
-
-	#div-diagonal-2002 {
- 		margin-top: 152%;
-    	height: 20px;
-    	margin-left: 47px;
- 		}
-
-	.bandeira-2002 {
-	    margin-top: 64px;
-	}
-
-	#div-diagonal-2012{
-		height: 25px;
-		margin-left: 30px;
-	    margin-top: 185%;
-	}
-
-	.bandeira-2012 {
-	    margin-top: 62px;
-	}
-
-	#div-diagonal-2015{
-		height: 16px;
-	    margin-left: 20px;
-	    margin-top: 240%;
-	}
-
-	.bandeira-2015 {
-	    margin-top: 63px;
-	}
-
-	#div-diagonal-2018{
-	    height: 24px;
-    	margin-left: 4px;
-    	margin-top: 239%;
-    }
-
-    .bandeira-2018 {
-	    margin-top: 54px;
-	}
-
-	#div-diagonal-2019{
-		height: 20px;
-	    margin-left: -15px;
-	    margin-top: 377%;	
-    }
-
-     .bandeira-2019 {
-	    margin-top: 57px;
-	}
-
-	#div-diagonal-2020{
-		height: 29px;
-	    margin-left: 1px;
-	    margin-top: 236%;
-    }
-
-     .bandeira-2020 {
-	    margin-top: 52px;
-	}
-
-}
-
-
-@media (min-width: 360px){
-
-	#div-diagonal-2002 {
- 		margin-top: 152%;
-    	height: 20px;
-    	margin-left: 47px;
- 		}
-
-	.bandeira-2002 {
-	    margin-top: 64px;
-	}
-
-	#div-diagonal-2012{
-		height: 25px;
-		margin-left: 8px;
-	    margin-top: 186%;
-	}
-
-	.bandeira-2012 {
-	    margin-top: 63px;
-	}
-
-	#div-diagonal-2015{
-		height: 21px;
-	    margin-left: 1px;
-	    margin-top: 202%;
-	}
-
-	.bandeira-2015 {
-	    margin-top: 66px;
-	}
-
-	#div-diagonal-2018{
-	    height: 24px;
-    	margin-left: 4px;
-    	margin-top: 231%;
-    }
-
-    .bandeira-2018 {
-	    margin-top: 67px;
-	}
-
-	#div-diagonal-2019{
-		height: 20px;
-	    margin-left: -15px;
-	    margin-top: 364%;	
-    }
-
-     .bandeira-2019 {
-	    margin-top: 70px;
-	}
-
-	#div-diagonal-2020{
-		height: 44px;
-	    margin-left: 1px;
-	    margin-top: 217%;
-    }
-
-     .bandeira-2020 {
-	    margin-top: 58px;
-	}
-
-}
-
-
-
-@media (min-width: 375px){
-
-	#div-diagonal-2002 {
- 		margin-top: 135%;
-    	height: 22px;
-    	margin-left: 47px;
- 		}
-
-	.bandeira-2002 {
-	    margin-top: 64px;
-	}
-
-	#div-diagonal-2012{
-		height: 34px;
-	    margin-top: 174%;
-	}
-
-	.bandeira-2012 {
-	    margin-top: 66px;
-	}
-
-	#div-diagonal-2015{
-		height: 57px;
-	    margin-left: 20px;
-	    margin-top: 174%;
-	}
-
-	.bandeira-2015 {
-	    margin-top: 57px;
-	}
-
-	#div-diagonal-2018{
-	    height: 41px;
-    	margin-left: 4px;
-    	margin-top: 213%;
-    }
-
-    .bandeira-2018 {
-	    margin-top: 65px;
-	}
-
-	#div-diagonal-2019{
-		height: 28px;
-	    margin-left: 5px;
-	    margin-top: 337%;	
-    }
-
-     .bandeira-2019 {
-	    margin-top: 76px;
-	}
-
-	#div-diagonal-2020{
-		height: 26px;
-	    margin-left: 1px;
-	    margin-top: 216%;
-    }
-
-     .bandeira-2020 {
-	    margin-top: 73px;
-	}
-
-}*/
-
-
-@media (min-width: 666px){
-
-	.linha-tempo {
-		width: 100%;
-	}
-
-	#div-diagonal-2002 {
-	    height: 129px;
-	    margin-top: 3%;
-	    margin-left: 354px;
- 		}
-
-	.bandeira-2002 {
-	    margin-top: 88px;
-	}
-
-	#div-diagonal-2012{
-		height: 21px;
-	    margin-top: 190%;
-	    margin-left: 10px;
-	}
-
-	.bandeira-2012 {
-	    margin-top: 60px;
-	}
-
-	#div-diagonal-2015{
-		height: 24px;
-	    margin-left: 10px;
-	    margin-top: 191%;
-	}
-
-	.bandeira-2015 {
-	    margin-top: 61px;
-	}
-
-	#div-diagonal-2018{
-	    height: 17px;
-	    margin-left: -6px;
-	    margin-top: 232%;
-    }
-
-    .bandeira-2018 {
-	    margin-top: 64px;
-	}
-
-	#div-diagonal-2019{
-		height: 27px;
-	    margin-left: -21px;
-	    margin-top: 244%;	
-    }
-
-     .bandeira-2019 {
-	    margin-top: 59px;
-	}
-
-	#div-diagonal-2020{
-		height: 32px;
-	    margin-left: 16px;
-	    margin-top: 193%;
-    }
-
-     .bandeira-2020 {
-	    margin-top: 65px;
-	}
-
-}
-
-
-
-
-@media (min-width: 992px){
-
-
-	#div-diagonal-2002 {
-	    margin-top: 138%;
-	    height: 170px;
-	    margin-left: 459px;
- 		}
-
-	.bandeira-2002 {
-	    margin-top: 64px;
-	}
-
-	#div-diagonal-2012{
-		height: 0px;
-    	margin-top: 0%;
-    	margin-left: 0px;
-	}
-
-	.bandeira-2012 {
-	    margin-top: 170px;
-	}
-
-	#div-diagonal-2015{
-		height: 0px;
-	    margin-left: 0px;
-	    margin-top: 0%;
-	}
-
-	.bandeira-2015 {
-	    margin-top: 197px;
-	}
-
-	#div-diagonal-2018{
-	    height: 0px;
-    	margin-left: 0px;
-    	margin-top: 0%;
-    }
-
-    .bandeira-2018 {
-	    margin-top: 172px;
-	}
-
-	#div-diagonal-2019{
-		height: 0px;
-	    margin-left: 0px;
-	    margin-top: 0%;	
-    }
-
-     .bandeira-2019 {
-	    margin-top: 165px;
-	}
-
-	#div-diagonal-2020{
-		height: 0px;
-	    margin-left: 0px;
-	    margin-top: 0%;
-    }
-
-     .bandeira-2020 {
-	    margin-top: 197px;
-	}
-
-
-	/*@media (min-width: 1020px){
-
-
-	#div-diagonal-2002 {
- 		margin-top: 138%;
-    	height: 22px;
-    	margin-left: 47px;
- 		}
-
-	.bandeira-2002 {
-	    margin-top: 64px;
-	}
-
-	#div-diagonal-2012{
-		height: 50px;
-    	margin-top: 160%;
-    	margin-left: 22px;
-	}
-
-	.bandeira-2012 {
-	    margin-top: 40px;
-	}
-
-	#div-diagonal-2015{
-		height: 31px;
-	    margin-left: 17px;
-	    margin-top: 173%;
-	}
-
-	.bandeira-2015 {
-	    margin-top: 57px;
-	}
-
-	#div-diagonal-2018{
-	    height: 41px;
-    	margin-left: 4px;
-    	margin-top: 196%;
-    }
-
-    .bandeira-2018 {
-	    margin-top: 43px;
-	}
-
-	#div-diagonal-2019{
-		height: 28px;
-	    margin-left: 5px;
-	    margin-top: 223%;	
-    }
-
-     .bandeira-2019 {
-	    margin-top: 58px;
-	}
-
-	#div-diagonal-2020{
-		height: 44px;
-	    margin-left: 16px;
-	    margin-top: 174%;
-    }
-
-     .bandeira-2020 {
-	    margin-top: 52px;
-	}
-}
-
-*/
-
-@media (min-width: 1200px){
-
-
-	 #div-diagonal-2002 {
-	    margin-top: 138%;
-	    height: 199px;
-	    margin-left: 554px;
- 		}
-
-	.bandeira-2002 {
-	    margin-top: 64px;
-	}
-
-	#div-diagonal-2012{
-		height: 0px;
-    	margin-top: 0%;
-    	margin-left: 0px;
-	}
-
-	.bandeira-2012 {
-	    margin-top: 243px;
-	}
-
-	#div-diagonal-2015{
-		height: 0px;
-	    margin-left: 0px;
-	    margin-top: 0%;
-	}
-
-	.bandeira-2015 {
-	    margin-top: 260px;
-	}
-
-	#div-diagonal-2018{
-	    height: 0px;
-    	margin-left: 0px;
-    	margin-top: 0%;
-    }
-
-    .bandeira-2018 {
-	    margin-top: 267px;
-	}
-
-	#div-diagonal-2019{
-		height: 0px;
-	    margin-left: 0px;
-	    margin-top: 0%;	
-    }
-
-     .bandeira-2019 {
-	    margin-top: 288px;
-	}
-
-	#div-diagonal-2020{
-		height: 0px;
-	    margin-left: 0px;
-	    margin-top: 0%;
-    }
-
-     .bandeira-2020 {
-	    margin-top: 297px;
-	}
-
-
-}
-
-
-
-
-
-</style>
-
-
-
 <body>
+ <div class="hidden-xs" style="margin-left: 100px;">
 <section class="linha-tempo">
 	<div class="container">
-		<div>
-		 <h1 style="padding-bottom: 30px; color:#0e3b6e;">
-	       <font style="font-weight: bolder;" class="text-o-color-4">Prismapar:<br/></font>
-	       <font style="" class="text-o-color-4">20 anos conectando a <br>América Latina<br/><br/></font>
-	     </h1>
-		</div>
-		<div class="row datas">
-			<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-0" style="margin-top: 20px;">
-				<img src="./img/logo-2002.png" />
-				<hr class="line-title">
-				<p>Fundada por Renato Souza e Paulo R. Souza em São Paulo. Foco no setor da Educação.</p>
-				<div id="div-diagonal-2002"></div>
-				<div class="bandeira-2002"><img src="./img/bandeira-2002.png" /></div>
-				<hr class="line-bandeira">
-				<p>2002</p>
-			</div>
-			<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-0" style="margin-top: 15px;">
-				<p>Expansão</p>
-				<hr class="line-title">
+		
 				<div>
-					<p>1º passo para expansão LATAM. Abertura do escritório na Costa Rica.</p>
+				 <h1 style="padding-bottom: 30px; color:#0e3b6e; margin-bottom: -160px;">
+	    		   <font style="font-weight: bolder;" class="text-o-color-4">Prismapar:<br/></font>
+	    		   <font style="" class="text-o-color-4">20 anos conectando a <br>América Latina<br/><br/></font>
+	    		 </h1>
 				</div>
-				<div id="div-diagonal-2012"></div>
-				<div class="bandeira-2012"><img src="./img/bandeira-2012.png" /></div>
-				<hr class="line-bandeira">
-				<p>2012</p>
-			</div>
-			<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-0" style="margin-top: -10px;">
-				<p>Expansão</p>
-				<hr class="line-title">
-				<div>
-					<p>Ampliação para a Colômbia com um novo sócio, Marcelo Burbano.</p>
-				</div>
-				<div id="div-diagonal-2015"></div>
-				<div class="bandeira-2015"><img src="./img/bandeira-2015.png" /></div>
-				<hr class="line-bandeira">
-				<p>2015</p>
-			</div>
-			<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-0" style="margin-top: -25px;">
-				<p>Expansão</p>
-				<hr class="line-title">
-				<p>Diversificação e internaciolização regional.</p>
-				<div id="div-diagonal-2018"></div>
-				<div class="bandeira-2018"><img src="./img/bandeira-2018.png" /></div>
-				<hr class="line-bandeira">
-				<p>2018</p>
-			</div>
-			<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-0" style="margin-top: -40px;">
-				<p>Expansão</p>
-				<hr class="line-title">
-				<p>Ampliação para a Espanha.</p>
-				<div id="div-diagonal-2019"></div>
-				<div class="bandeira-2019"><img src="./img/bandeira-2019.png" /></div>
-				<hr class="line-bandeira">
-				<p>2019</p>
-			</div>
-			<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 p-0" style="margin-top: -63px;">
-				<p>Expansão</p>
-				<hr class="line-title">
-				<p>Diversificação setorial. Expansão Estados Unidos.</p>
-				<div id="div-diagonal-2020"></div>
-				<div class="bandeira-2020"><img src="./img/bandeira-2020.png" /></div>
-				<hr class="line-bandeira" style="width: 100%;">
-				<p>2020</p>
-			</div>
+				<div class="row datas">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="content_3" style="margin-left: 15px;">
+							<img class="logo_time" src="img\logo-2002.png" />
+							<p></p>
+							<hr class="line-bandeira">
+							<p>Renato Souza Neto e Paulo Renato Souza, ex-ministro da Educação do Brasil, fundam a Prismapar em 2002 com o objetivo de oferecer consultoria especializada em M&A no setor de Educação no Brasil.</p>
+						</div>	
+					</div>
 
-		</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="content_3" style="margin: 63px;margin-left: 28px;">
+							<p style="font-weight: bolder;">Expansão Regional</p>
+							<hr class="line-bandeira">
+							<p>Abertura do escritório na Costa Rica em 2012 e ampliação para Colômbia em 2015, com a integração de Marcelo Burbano como sócio-diretor baseado em Bogotá. Esse movimento é reforçado em 2018 com a abertura do escritório de Guayaquil, no Equador.</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+					        
+							<div class="content_3" style="margin: 115px;margin-left: 11px;">
+							<p style="font-weight: bolder;"> Expansão Setorial</p>
+							<hr class="line-bandeira">
+							<p>A partir de 2019, com a incorporação de novos sócios e colaboradores, continuamos nossa expansão regional e iniciamos nosso processo de diversificação setorial, com importantes processos e transações em setores diversos.</p>
+						</div>	
+					</div>
+				</div>
+		<img class="linhadiagonal" src="img\linha-diagonal.png" />
+	</div>
+    <div class="container">
+				<div class="row datas">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="content_1">
+							<div class="bandeira-2002"><img src="./img/bandeira-2002.png" /></div>
+							<hr class="line-bandeira">
+							<p>2002</p>
+						</div>
+						<div class="content_2">
+							<div class="bandeira-2012"><img src="./img/bandeira-2012.png" style="margin-left: 22px;"/></div>
+							<hr class="line-bandeira">
+							<p style="margin-left: 18px;">2012</p>
+						</div>	
+					</div>
+
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="content_1">
+							<div class="bandeira-2015"><img src="./img/bandeira-2015.png" /></div>
+							<hr class="line-bandeira">
+							<p>2015</p>
+						</div>
+						<div class="content_2">
+							<div class="bandeira-2018"><img src="./img/bandeira-2018.png" /></div>
+							<hr class="line-bandeira">
+							<p>2018</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="content_1">
+							<div class="bandeira-2019"><img src="./img/bandeira-2019.png" /></div>
+							<hr class="line-bandeira">
+							<p>2019</p>
+						</div>
+						<div class="content_2">
+							<div class="bandeira-2020"><img src="./img/bandeira-2020.png" /></div>
+							<hr class="line-bandeira" style="width: 0px;">
+							<p>2020</p>
+						</div>
+					</div>
+				</div>
+		
 	</div>
 </section>
+ </div>
 </body>
 
 </html>

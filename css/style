@@ -1,0 +1,104 @@
+.linha-tempo {
+	background-image: url(./img/bg_historico.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	width: 210%;
+}
+
+.line-title{
+	width: 80%;
+	height: 3px!important;
+	border-top: 1px solid #1e3365;
+	margin-left: 0;
+}
+
+.linha-tempo {
+	width: 100%;
+}
+
+.bandeira-2002 {
+	margin-top: 88px;
+}
+
+.bandeira-2018 {
+	margin-top: 64px;
+}
+
+
+.bandeira-2020 {
+	margin-top: 65px;
+}
+
+
+.bandeira-2012 {
+margin-top: 69px;
+}
+
+
+.bandeira-2015 {
+	margin-top: 84px;
+}
+
+
+.bandeira-2019 {
+	 margin-top: 85px;
+}
+
+
+.line-bandeira{
+	border-top: 1px solid #1e3365;
+	height: 3px!important;
+	width: 118%;
+}
+
+.datas {
+		display: flex;
+		align-items: flex-end;
+		align-content: flex-end;
+}	
+.content_1 {
+width: 50%;
+margin-right: auto;
+float: left;
+font-weight: bolder;
+color: #0e3b6e;
+}
+
+.content_2 {
+width: 50%;
+margin-left: auto;
+float: right;
+font-weight: bolder;
+color: #0e3b6e;
+}
+
+.content_3 {
+	width: 50%;
+	margin: auto;
+	color: #0e3b6e;
+	}
+
+.logo_time {
+		width: 144px;
+	}
+.linhadiagonal {
+    position: absolute;
+    margin-top: -113px;
+    margin-left: -3px;
+	z-index: -20;
+}
+
+.hidden-xs {
+	opacity: 0; /* Esconde no desktop. */
+	height: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	
+	.hidden-xs {
+		opacity: 1; /* Só aparece no mobile. */
+		height: auto;
+	}
+}

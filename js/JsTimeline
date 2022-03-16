@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
 			var timeline = $(this),
 				timelineComponents = {};
 			//cache timeline components 
-			timelineComponents['timelineWrapper'] = timeline.find('.events-wrapper');
+			timelineComponents['timelineWrapper'] = timeline.find('.events-wrapper'); 
 			timelineComponents['eventsWrapper'] = timelineComponents['timelineWrapper'].children('.events');
 			timelineComponents['fillingLine'] = timelineComponents['eventsWrapper'].children('.filling-line');
 			timelineComponents['timelineEvents'] = timelineComponents['eventsWrapper'].find('a');

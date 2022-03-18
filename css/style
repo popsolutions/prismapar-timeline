@@ -83,11 +83,13 @@ color: #0e3b6e;
 .logo_time {
 		width: 144px;
 	}
+  
 .linhadiagonal {
     position: absolute;
-    margin-top: -113px;
-    margin-left: -3px;
-	z-index: -20;
+    margin-top: -149px;
+    margin-left: -4px;
+    width: 1011px;
+    z-index: -20;
 }
 
 .hidden-xs {

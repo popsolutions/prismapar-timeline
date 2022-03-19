@@ -100,7 +100,13 @@ color: #0e3b6e;
 		opacity: 1; /* Só aparece no mobile. */
 		height: auto;
 	}
-
+  .alinhamobile {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #0e3b6e;
+    margin-bottom: -236px;
+    margin-top: 10px;
+}
 @media only screen and (min-width: 768px) {
 	
 	.hidden-xs {
@@ -112,6 +118,11 @@ color: #0e3b6e;
 	opacity: 0; /* Esconde no desktop. */
 	height: 0;
 }
+.alinhamobile { padding-bottom: 30px;
+  color: #0e3b6e;
+  margin-bottom: -236px;
+  margin-top: -50px;
+ }
 
 }
 
@@ -441,7 +452,7 @@ body{
 
 @media only screen and (max-width: 767px) {
 
-  .cd-horizontal-timeline.loaded{ margin: 0;}  
+  .cd-horizontal-timeline.loaded{ margin-top: 168;}  
   .cd-horizontal-timeline .timeline{ width: 100%;}
   .cd-horizontal-timeline ol, .cd-horizontal-timeline ul{padding: 0;margin: 0;}
   .cd-horizontal-timeline .events-content h4{ font-size: 16px;}
